@@ -1,14 +1,18 @@
-// je crée une variable modifiable nommée "starter" à laquelle j'attribue pour l'exemple la valeur de 68.
+/* Exercice 3
+Ecrire un algorithme qui demade un nombre de départ,
+et qui ensuite affiche les dix nombres suivants.
+Par exemple, si l'utilisateur entre le nombre 17,
+ le programme affichera les nombres de 18 à 27.*/
 
-let starter = 68;
+ function augment ()
+ {
+    let nombre = 5;
+    arret = nombre + 11;
 
-// Pour une variable modifiable nommée "Calculator", j'attribue comme valeur, la variable "starter" à laquelle je rajoute +1.
-// Tant que la variable "calculator" n'a pas atteint pas le nombre "starter +11", alors la variable "calculator" doit continuer d'augmenter.
+    while (nombre < arret){
+        console.log(nombre);
+        nombre++;
+    }
+ }
 
-for (let calculator = starter +1; 
-			calculator < starter +11; 
-      calculator++) 
-      
-// J'affiche le résultat.
-      
-  console.log(calculator)
+augment();
