@@ -1,26 +1,18 @@
-// On définit trois variables : 
-// La variable "one" correspondant au chiffre de départ à savoir 1
-// La variable "starter" correspondant au nombre de départ demandé
-// La variable "zero" correspondant justement à 0 pour pouvoir débuter l'addition
+/* Exercice 4
+Ecrire un algorithme qui demande un nombre de départ,
+ et qui calcule la somme des entiers jusqu’à ce nombre.
+  Par exemple, si l’on entre 5, le programme doit calculer : 1 + 2 + 3 + 4 + 5 = 15 
+  NB : on souhaite afficher uniquement le résultat, pas la décomposition du calcul.*/
 
-let one = 1
-let starter = 20
-let zero = 0
+  function etoile() {
+    nombre = 5; 
+    somme = 0;
 
-// Tant que la variable "one" sera inférieur ou égale à "starter", la boucle devra continuer
+    for (let i = 1; i <= nombre; i++) {
+        
+        somme = somme + i
+    }
+    console.log(somme)
+}
 
-while (one <= starter) {
-
-// À chaque boucle, on ajoutera la variable "one" à "zero"
-
-zero += one
-
-// À chaque boucle, on ajoutera 1 à "one"
-
-one += 1}
-
-// Une fois que "one" devient égal à "starter", on ferme la boucle
-
-// Pour finir, on affiche le résultat dans la console
-
-console.log(zero);
+    etoile();
