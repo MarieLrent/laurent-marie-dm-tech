@@ -1,16 +1,27 @@
-//Je déclare la fonction "Reverse" avec l'argument "inverser".
+// Exercice 1 
+function reverseString(str)
+{
+    str = str.split("");
+   
+    str = str.reverse();
+    
+    str = str.join("");
 
-function Reverse(inverser) {
-
-// J'applique à l'argument "inverser" la commande de découpe, d'inversion et de jonction afin que celle-ci soit inverser.
-
-  return inverser.split("").reverse("").join("");
+    return str;
 }
 
-// Je crée une variable nommée "inversion" qui fait appel à ma fonction Reverse pour l'argument ("Marie DC3")
 
-var inversion = Reverse("Marie DC3");
+  const btn1 = document.getElementById("btn1");
 
-// Je demande à afficher la variable "inversion"
+  btn1.addEventListener("click",toto)
 
-console.log(inversion);
+ function toto()
+ { 
+    const exoVal = document.getElementById("exo1").value;
+    let inv = reverseString(exoVal);
+
+   const result = document.getElementById("resultat");
+   result.innerHTML= inv;
+ }
+
+ 
